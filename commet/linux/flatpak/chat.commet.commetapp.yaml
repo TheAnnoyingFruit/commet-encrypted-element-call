@@ -27,7 +27,9 @@ finish-args:
 - "--system-talk-name=org.freedesktop.NetworkManager"
 - "--env=LD_LIBRARY_PATH=/app/lib"
 modules:
-- name: libayatana-appindicator buildsystem: meson config-opts:
+- name: libayatana-appindicator 
+  buildsystem: meson 
+  config-opts:
         -Dgtk3=true
         -Dgtk4=false
         -Dintrospection=true sources:
