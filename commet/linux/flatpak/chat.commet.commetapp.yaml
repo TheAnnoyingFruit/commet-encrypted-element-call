@@ -30,13 +30,13 @@ modules:
 - name: libayatana-appindicator 
   buildsystem: meson 
   config-opts:
-        -Dgtk3=true
-        -Dgtk4=false
-        -Dintrospection=true 
-        sources:
-        type: archive 
-        url: https://github.com/AyatanaIndicators/libayatana-appindicator/archive/refs/tags/0.5.94.tar.gz 
-        sha256: 884a6bc77994c0b58c961613ca4c4b974dc91aa0f804e70e92f38a542d0d0f90
+  - -Dgtk3=true
+  - -Dgtk4=false
+  - -Dintrospection=true 
+  sources:
+  type: archive 
+  url: https://github.com/AyatanaIndicators/libayatana-appindicator/archive/refs/tags/0.5.94.tar.gz 
+  sha256: 884a6bc77994c0b58c961613ca4c4b974dc91aa0f804e70e92f38a542d0d0f90
 - name: keybinder3
   buildsystem: autotools
   post-install:
